@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Quotes';
-  quotes: string[];
+  quote: string[];
 
   constructor(){
-    this.quotes = ["this is a test quote","another test quote","yet another test quote"];
+    this.quote = ["this is a test quote","another test quote","yet another test quote"];
   }
 }
