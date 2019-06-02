@@ -7,9 +7,12 @@
 <h2>Awesome quotes for you and everyone else: </h2>
 
 <ul>
-  <div *ngFor='let quotes of quotes'>
+  <div *ngFor='let quotes of quotes;let i = index'>
       <li >{{quotes.name}}</li>
-      <app-quote-details [quotes]='quotes'></app-quote-details>
+
+      <button  (click)='toogleDetails(i)'>Details</button>
+
+      <app-quote-details *ngIf="quotes.showDescription" [quotes]='quotes'></app-quote-details>
   </div>
 </ul>
 

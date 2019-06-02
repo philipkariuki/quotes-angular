@@ -20,6 +20,9 @@ export class QuotesComponent implements OnInit {
     new Quotes(7, '"Never fear shadows. They simply mean there is a light shining somewhere nearby."','Author - Ruth Renkel','Submitted by: Max'),
 
 ]
+toogleDetails(index){
+  this.quotes[index].showDescription = !this.quotes[index].showDescription;
+}
 
   constructor() { }
 
