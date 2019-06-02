@@ -3,15 +3,10 @@
   <h1>
     Awesome {{ title }}!
   </h1>
-  <img width="300" alt="Angular Logo" src="https://previews.123rf.com/images/enterline/enterline1612/enterline161200209/66655445-the-word-quotes-concept-and-theme-painted-in-watercolor-ink-on-a-white-paper-.jpg">
+  <img width="300" alt="Quotes image" src="https://previews.123rf.com/images/enterline/enterline1612/enterline161200209/66655445-the-word-quotes-concept-and-theme-painted-in-watercolor-ink-on-a-white-paper-.jpg">
 </div>
 <h2>Awesome quotes for you and everyone else: </h2>
 <ul>
-  <li>
-    <p> The quote for today is {{quote}} </p>
-  </li>
-  <li>
-    <p> Another quote for today is {{quote}} </p>
-  </li>
+  <li *ngFor='let quote of quote'>{{quote}}</li>
 </ul>
 
