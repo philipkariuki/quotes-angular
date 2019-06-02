@@ -10,7 +10,6 @@ export class AppComponent {
   quotes: string[];
 
   constructor(){
-
     this.quotes = ["this is a test quote","another test quote","yet another test quote"];
   }
 }
