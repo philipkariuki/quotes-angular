@@ -5,6 +5,17 @@
   <img width="300" alt="Quotes image" src="https://previews.123rf.com/images/enterline/enterline1612/enterline161200209/66655445-the-word-quotes-concept-and-theme-painted-in-watercolor-ink-on-a-white-paper-.jpg">
 </div>
 <h2>Awesome quotes for you and everyone else: </h2>
+
 <ul>
-  <li *ngFor='let quote of quote'>{{quote.name}}</li>
+  <div *ngFor='let quotes of quotes'>
+      <li >{{quotes.name}}</li>
+      <app-quote-details [quotes]='quotes'></app-quote-details>
+  </div>
 </ul>
+
+
+
+
+<!-- <ul>
+  <li *ngFor='let quotes of quotes'>{{quotes.name}}</li>
+</ul> -->

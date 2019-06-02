@@ -10,7 +10,7 @@ export class QuotesComponent implements OnInit {
 
   title = 'Quotes';
 
-  quote = [
+  quotes = [
     new Quotes(1, '"It Doesn’t Matter Where You Came From. All That Matters Is Where You Are Going."','Author - Brian Tracy','Submitted by: Phil'),
     new Quotes(2, '"Think Big And Don’t Listen To People Who Tell You It Can’t Be Done. Life’s Too Short To Think Small."','Author - Tim Ferriss','Submitted by: Paul'),
     new Quotes(3,  '“The Person Who Says It Cannot Be Done Should Not Interrupt The Person Who Is Doing It.”','Author - Chinese Proverb','Submitted by: Paula'),
