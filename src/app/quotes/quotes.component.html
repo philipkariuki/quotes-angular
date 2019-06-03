@@ -6,19 +6,19 @@
 </div>
 <h2>Awesome quotes for you and everyone else: </h2>
 
-<ul>
-  <div *ngFor='let quotes of quotes;let i = index'>
+<div class="container">
+  <div class="row" *ngFor='let quotes of quotes;let i = index'>
+      <div class="row">
       <li >{{quotes.name}} &rArr; Added on {{quotes.dateAdded|date}}</li>
 
-      <button  (click)='toogleDetails(i)'>Details</button>
+      <button class="btn btn-primary"  (click)='toogleDetails(i)'>Details</button>
+      </div>
 
-      <app-quote-details *ngIf="quotes.showDescription" [quotes]='quotes' (isComplete)= 'deleteQuote($event,i)'></app-quote-details>
+      <div class="row" *ngIf="quotes.showDescription">
+      <app-quote-details  [quotes]='quotes' (isComplete)= 'deleteQuote($event,i)'></app-quote-details>
   </div>
-</ul>
+</div>
+
+</div>
 
 
-
-
-<!-- <ul>
-  <li *ngFor='let quotes of quotes'>{{quotes.name}}</li>
-</ul> -->
