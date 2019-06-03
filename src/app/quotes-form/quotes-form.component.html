@@ -1,6 +1,6 @@
 <div class="container-fluid">
     <div class="row">
-        <form #quotesForm='ngForm'>
+        <form (ngSubmit)='submitGoal() #quotesForm='ngForm'>
             <div class="form-group">
 
                 <label for="quotes">Quote</label>
