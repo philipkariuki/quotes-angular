@@ -16,8 +16,8 @@ export class QuotesComponent implements OnInit {
     new Quotes(3,  '“The Person Who Says It Cannot Be Done Should Not Interrupt The Person Who Is Doing It.”','Author - Chinese Proverb','Submitted by: Paula' new Date(2011,7,7) ),
     new Quotes(4,  '“Everything You’ve Ever Wanted Is On The Other Side Of Fear.”','Author - George Addair','Submitted by: Georgina' new Date(2017,6,17) ),
     new Quotes(5, '“The Only Place Where Success Comes Before Work Is In The Dictionary.”','Author - Vidal Sassoon','Submitted by: Naomi' new Date(2018,0,29) ),
-    new Quotes(6, '“All Our Dreams Can Come True If We Have The Courage To Pursue Them”','Author - Walt Disney','Submitted by: George' new Date(2019,5,19) ),
-    new Quotes(7, '"Never fear shadows. They simply mean there is a light shining somewhere nearby."','Author - Ruth Renkel','Submitted by: Max' new Date(2019,7,30) ),
+    new Quotes(6, '“All Our Dreams Can Come True If We Have The Courage To Pursue Them”','Author - Walt Disney','Submitted by: George' new Date(2019,3,19) ),
+    new Quotes(7, '"Never fear shadows. They simply mean there is a light shining somewhere nearby."','Author - Ruth Renkel','Submitted by: Max' new Date(2018,7,30) ),
 
 ]
 toogleDetails(index){
