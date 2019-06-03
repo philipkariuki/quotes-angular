@@ -2,23 +2,27 @@
   <h1>
     Awesome {{ title }}!
   </h1>
-  <img width="300" alt="Quotes image" src="https://previews.123rf.com/images/enterline/enterline1612/enterline161200209/66655445-the-word-quotes-concept-and-theme-painted-in-watercolor-ink-on-a-white-paper-.jpg">
+  <img width="300" alt="Quotes image"
+    src="https://previews.123rf.com/images/enterline/enterline1612/enterline161200209/66655445-the-word-quotes-concept-and-theme-painted-in-watercolor-ink-on-a-white-paper-.jpg">
 </div>
 <h2>Awesome quotes for you and everyone else: </h2>
 
 <div class="container">
   <div class="row" *ngFor='let quotes of quotes;let i = index'>
-      <div class="row">
-      <li >{{quotes.name}} &rArr; Added on {{quotes.dateAdded|date}}</li>
+    <div class="row">
+      <li>{{quotes.name}} &rArr; Added on {{quotes.dateAdded|date}}</li>
 
-      <button class="btn btn-primary"  (click)='toogleDetails(i)'>Details</button>
-      </div>
+      <button class="btn btn-primary" (click)='toogleDetails(i)'>Details</button>
+    </div>
 
-      <div class="row" *ngIf="quotes.showDescription">
-      <app-quote-details  [quotes]='quotes' (isComplete)= 'deleteQuote($event,i)'></app-quote-details>
+    <div class="row" *ngIf="quotes.showDescription">
+      <app-quote-details [quotes]='quotes' (isComplete)='deleteQuote($event,i)'></app-quote-details>
+    </div>
   </div>
-</div>
-
+<hr>
+  <div class="row">
+        <app-quotes-form></app-quotes-form>
+    </div>
 </div>
 
 
