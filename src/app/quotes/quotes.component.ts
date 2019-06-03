@@ -26,9 +26,13 @@ toogleDetails(index){
 
 deleteQuote(isComplete,index){
   if (isComplete){
-      this.quotes.splice(index,1);
+      let toDelete=confirm(`You sure you wanna delete ${this.quotes[index].name}?`)
+
+      if(toDelete){
+          this.quotes.splice(index,1)
       }
-      }
+  }
+}
 
   constructor() { }
 
