@@ -34,6 +34,14 @@ deleteQuote(isComplete,index){
   }
 }
 
+addNewQuotes(quotes){
+  let quotesLength = this.quotes.length;
+  quotes.id=quotesLength+1;
+  quotes.dateAdded = new Date(quotes.dateAdded)
+  this.quotes.push(quotes)
+
+}
+
   constructor() { }
 
   ngOnInit() {
