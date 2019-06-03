@@ -9,25 +9,37 @@
 
                 <div [hidden]="quotes.valid || quotes.pristine" class="alert alert-danger">
                     <p> A Quote is Required</p>
-
                 </div>
-            </div>
-
-            <div class="form-group">
-                <label for="description">Author</label>
-                <input type="text" required class="form-control" id="author">
-
-            </div>
-            <div class="form-group">
-
-                <label for="description">Submitted By</label>
-                <input type="text" required class="form-control" id="submitter">
 
             </div>
 
             <div class="form-group">
-                <label for="complete">Created On </label>
-                <input type='date' id="created" required>
+                <label for="author">Author</label>
+                <input type="text"  class="form-control" id="author" [(ngModel)]="newGoal.author" name="author" #author="ngModel" required>
+
+                <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+                    <p> Insert author</p>
+                </div>
+
+            </div>
+            <div class="form-group">
+
+                <label for="submitter">Submitted By</label>
+                <input type="text"  class="form-control" id="submitter" [(ngModel)]="newQuotes.submitter" name="submitter" #submitter="ngModel" required>
+
+                <div [hidden]="submitter.valid || submitter.pristine" class="alert alert-danger">
+                    <p> Insert name</p>
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <label for="created">Created On </label>
+                <input type='date' id="created" [(ngModel)]="newQuotes.created" name="created" #created="ngModel" required >
+
+                <div [hidden]="created.valid || created.pristine" class="alert alert-danger">
+                    <p> A submit date is required</p>
+                </div>
 
             </div>
             <button type="submit" class="btn btn-success btn-lg">Add Quote</button>
